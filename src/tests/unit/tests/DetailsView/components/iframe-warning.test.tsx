@@ -48,7 +48,7 @@ describe('IframeWarning', () => {
 describe('AssessmentIframeWarning', () => {
     let allUrlsPermissionHandlerMock: IMock<AllUrlsPermissionHandler>;
     let assessmentActionCreatorMock: IMock<AssessmentActionMessageCreator>;
-    let testStub: VisualizationType;
+    let testStub: VisualizationType | number;
     let props: AssessmentIframeWarningProps;
 
     beforeEach(() => {
@@ -86,7 +86,7 @@ describe('AssessmentIframeWarning', () => {
 describe('FastPassIframeWarning', () => {
     let allUrlsPermissionHandlerMock: IMock<AllUrlsPermissionHandler>;
     let detailsViewActionCreatorMock: IMock<DetailsViewActionMessageCreator>;
-    let testStub: VisualizationType;
+    let testStub: VisualizationType | number;
     let props: FastPassIframeWarningProps;
 
     beforeEach(() => {

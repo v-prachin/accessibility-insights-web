@@ -56,7 +56,7 @@ describe('AdhocIssuesTestView', () => {
     } as VisualizationConfiguration;
 
     const clickHandlerFactoryMock = Mock.ofType(DetailsViewToggleClickHandlerFactory);
-    const selectedTest: VisualizationType = -1;
+    const selectedTest: VisualizationType | number = -1;
 
     let props = {
         configuration: configuration,

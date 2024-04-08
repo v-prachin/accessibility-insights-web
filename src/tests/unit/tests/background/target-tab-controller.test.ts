@@ -13,7 +13,7 @@ describe('TargetTabControllerTest', () => {
     let testSubject: TargetTabController;
     let configStub: VisualizationConfiguration;
     let getSwitchToTargetTabCallbackMock: IMock<(step: string) => boolean>;
-    const test: VisualizationType = -2;
+    const test: VisualizationType | number = -2;
     const tabId: number = -1;
     const step: string = 'some step';
 
