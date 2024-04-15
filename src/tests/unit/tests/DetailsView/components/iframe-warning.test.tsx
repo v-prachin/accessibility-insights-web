@@ -48,13 +48,13 @@ describe('IframeWarning', () => {
 describe('AssessmentIframeWarning', () => {
     let allUrlsPermissionHandlerMock: IMock<AllUrlsPermissionHandler>;
     let assessmentActionCreatorMock: IMock<AssessmentActionMessageCreator>;
-    let testStub: VisualizationType | number;
+    let testStub: VisualizationType;
     let props: AssessmentIframeWarningProps;
 
     beforeEach(() => {
         allUrlsPermissionHandlerMock = Mock.ofType<AllUrlsPermissionHandler>();
         assessmentActionCreatorMock = Mock.ofType<AssessmentActionMessageCreator>();
-        testStub = -1;
+        testStub = -1 as VisualizationType;
         props = {
             deps: {
                 allUrlsPermissionHandler: allUrlsPermissionHandlerMock.object,
@@ -86,13 +86,13 @@ describe('AssessmentIframeWarning', () => {
 describe('FastPassIframeWarning', () => {
     let allUrlsPermissionHandlerMock: IMock<AllUrlsPermissionHandler>;
     let detailsViewActionCreatorMock: IMock<DetailsViewActionMessageCreator>;
-    let testStub: VisualizationType | number;
+    let testStub: VisualizationType;
     let props: FastPassIframeWarningProps;
 
     beforeEach(() => {
         allUrlsPermissionHandlerMock = Mock.ofType<AllUrlsPermissionHandler>();
         detailsViewActionCreatorMock = Mock.ofType<DetailsViewActionMessageCreator>();
-        testStub = -1;
+        testStub = -1 as VisualizationType;
         props = {
             deps: {
                 allUrlsPermissionHandler: allUrlsPermissionHandlerMock.object,

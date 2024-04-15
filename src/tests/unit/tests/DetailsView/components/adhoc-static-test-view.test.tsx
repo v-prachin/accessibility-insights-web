@@ -35,7 +35,7 @@ describe('AdhocStaticTestView', () => {
     let scanDataStub: ScanData;
     let clickHandlerStub: (event: any) => void;
     let visualizationStoreDataStub: VisualizationStoreData;
-    let selectedTest: VisualizationType | number;
+    let selectedTest: VisualizationType;
     let featureFlagStoreDataStub: FeatureFlagStoreData;
 
     beforeEach(() => {
@@ -57,7 +57,7 @@ describe('AdhocStaticTestView', () => {
             tests: {},
         } as VisualizationStoreData;
         clickHandlerStub = () => {};
-        selectedTest = -1;
+        selectedTest = -1 as VisualizationType;
         featureFlagStoreDataStub = {};
 
         props = {
